@@ -1,5 +1,6 @@
 .new-expense__controls {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -17,10 +18,13 @@
     padding: 0.5rem;
     border-radius: 6px;
     border: 1px solid #ccc;
-    width: 20rem;
+    width: 100%;
+    box-sizing: border-box;
     max-width: 100%;
 }
 
 .new-expense__actions {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
 }
